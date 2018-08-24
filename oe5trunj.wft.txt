@@ -1,0 +1,54 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   AntColonyAlgorithm/.classpath
+#	new file:   AntColonyAlgorithm/.project
+#	new file:   AntColonyAlgorithm/.settings/org.eclipse.jdt.core.prefs
+#	new file:   AntColonyAlgorithm/bin/MANIFEST.MF
+#	new file:   AntColonyAlgorithm/src/MANIFEST.MF
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/ChartUtils.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/DataLineChart.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/FLineChart.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/GBC.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/LineChart.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/ModelDataChart.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/ModelUChart.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/ModelYChart.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/chart/Serie.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Ant.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Ant2.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Ant3.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Common.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Common2.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Common3.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Frame.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Fun.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/GOModel.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/JMModel.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/LVModel.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Main.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Model.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/MusaModel.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Solve.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Solve2.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Solve3.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Solve_Ant.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Solve_Ant_SA.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Solve_SA.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/fun/Test.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/ACO.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/ACS.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Ant.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Common.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Frame.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/MMAS.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Main.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Test.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Tsp.java
+#	new file:   AntColonyAlgorithm/src/com/lmr/tsp/Tsp_DFS.java
+#
+
