@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.lmr.chart.FLineChart;
+import com.lmr.chart.ModelDataChart;
 
 /**
  * ÍË»ðËã·¨
@@ -184,6 +185,18 @@ public class Solve_SA {
 
 		FLineChart.AddSeriesCollection(betterAntList, "SA");
 		// FLineChart.AddSeriesCollection(m_bestAnts, name);
+		
+		JMModel.a=betterAntList.get(betterAntList.size()-1).m_nCurXVal;
+		JMModel.GetB();
+		JMModel.GetData();
+		JMModel.ShowData();
+		ModelDataChart.AddSeriesCollection("SA");
+		
+//		GOModel.b=betterAntList.get(betterAntList.size()-1).m_nCurXVal;
+//		GOModel.GetA();
+//		GOModel.GetData();
+//		GOModel.ShowData();
+//		ModelDataChart.AddSeriesCollection("SA");
 
 	}
 

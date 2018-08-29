@@ -42,8 +42,13 @@ public class FLineChart {
 	public static void AddSeriesCollection(List<Ant> betterAntList, String str) {
 		XYSeries xyseries = new XYSeries(str);
 		for(int i=0;i<betterAntList.size();i++){
-//			xyseries.add((i+1),ants[i].m_nCurFunVal);
-			xyseries.add((i+1),betterAntList.get(i).m_nCurFunVal);
+			if(i>100){
+				break;
+			}
+			if(i%3==0){
+				xyseries.add((i+1),betterAntList.get(i).m_nCurFunVal);
+//				xyseries.add((i+1),betterAntList.get(i).m_nCurXVal);				
+			}
 		}
 		seriescollection.addSeries(xyseries);
 	}
@@ -51,8 +56,13 @@ public class FLineChart {
 	public static void AddSeriesCollection(Ant[] ants,String str){
 		XYSeries xyseries = new XYSeries(str);
 		for(int i=0;i<ants.length;i++){
-			xyseries.add((i+1),ants[i].m_nCurFunVal);
-//			xyseries.add((i+1),ants[i].m_nCurXVal);
+			if(i>100){
+				break;
+			}
+			if(i%3==0){
+				xyseries.add((i+1),ants[i].m_nCurFunVal);
+//				xyseries.add((i+1),ants[i].m_nCurXVal);				
+			}
 		}
 		seriescollection.addSeries(xyseries);
 	}

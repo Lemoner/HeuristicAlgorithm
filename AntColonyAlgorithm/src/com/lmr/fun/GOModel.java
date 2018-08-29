@@ -111,7 +111,7 @@ public class GOModel {
 	 * 展示结果
 	 */
 	public static void ShowData(){
-		Main.frame.TA_GO.setText("");
+//		Main.frame.TA_GO.setText("");
 		Main.frame.TA_GO.append("----------GO模型----------\n");
 		Main.frame.TA_GO.append("初始错误数 n: "+Model.n+"\n");
 		Main.frame.TA_GO.append("固有错误数 a: "+a+"\n");

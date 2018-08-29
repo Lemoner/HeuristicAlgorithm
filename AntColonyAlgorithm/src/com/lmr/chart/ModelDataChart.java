@@ -23,6 +23,30 @@ public class ModelDataChart {
 	
 	public ModelDataChart() {
 	}
+	
+	public static void AddDataSeriesCollection(){
+		XYSeries xyseries = new XYSeries("Data");
+		
+		for(int i=1;i<Model.sumTime.length;i++){
+			xyseries.add(Model.sumTime[i],i);
+		}
+		seriescollection.addSeries(xyseries);
+	}
+	
+	public static void AddSeriesCollection(String name){
+		XYSeries xyseries = new XYSeries(name);
+		for(int i=0;i<JMModel.PredictFailureTimeList.size();i++){
+			xyseries.add(JMModel.PredictFailureTimeList.get(i).doubleValue(), i);
+		}
+		
+//		for(int i=0;i<GOModel.PredictFailureTimeList.size();i++){
+//			xyseries.add(GOModel.PredictFailureTimeList.get(i).doubleValue(), i);
+//		}
+		
+		seriescollection.addSeries(xyseries);
+	}
+	
+	
 
 	public static void AddSeriesCollection(){
 		XYSeries xyseries0 = new XYSeries("Data");

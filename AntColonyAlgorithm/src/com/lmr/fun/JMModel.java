@@ -112,7 +112,7 @@ public class JMModel {
 	 * 展示结果
 	 */
 	public static void ShowData(){
-		Main.frame.TA_JM.setText("");
+//		Main.frame.TA_JM.setText("");
 		Main.frame.TA_JM.append("----------JM模型----------\n");
 		Main.frame.TA_JM.append("初始错误数 n: "+Model.n+"\n");
 		Main.frame.TA_JM.append("固有错误数 N: "+a+"\n");

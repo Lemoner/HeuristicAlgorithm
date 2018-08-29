@@ -1,6 +1,7 @@
 package com.lmr.fun;
 
 import com.lmr.chart.FLineChart;
+import com.lmr.chart.ModelDataChart;
 
 /**
  * Ëã·¨
@@ -485,6 +486,18 @@ public class Solve_Ant_SA {
 		
 //		FLineChart.AddSeriesCollection(m_betterAnts, "Better");
 		FLineChart.AddSeriesCollection(m_bestAnts, "Ant_SA");
+		
+		JMModel.a=m_bestAnts[m_bestAnts.length-1].m_nCurXVal;
+		JMModel.GetB();
+		JMModel.GetData();
+		JMModel.ShowData();
+		ModelDataChart.AddSeriesCollection("Ant_SA");
+		
+//		GOModel.b=m_bestAnts[m_bestAnts.length-1].m_nCurXVal;
+//		GOModel.GetA();
+//		GOModel.GetData();
+//		GOModel.ShowData();
+//		ModelDataChart.AddSeriesCollection("Ant_SA");
 		
 	}
 

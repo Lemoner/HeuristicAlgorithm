@@ -34,6 +34,10 @@ public class Frame extends JFrame {
 	JTextField itTF;
 	JTextField funTF;
 	JButton beginBtn;
+	
+	JButton Btn1;
+	JButton Btn2;
+	JButton Btn3;
 
 	JPanel acoPanel;
 	JPanel acoChartPanel;
@@ -144,13 +148,13 @@ public class Frame extends JFrame {
 		layout.setConstraints(bestAntLabel, new GBC(0, 2, 3, 1).setFill(GBC.BOTH).setWeight(1, 0));
 		layout.setConstraints(bestAntScroll, new GBC(0, 3, 3, 1).setFill(GBC.BOTH).setWeight(1, 1));
 		acoPanel.setLayout(layout);
-		acoPanel.add(betterAntLabel);
+//		acoPanel.add(betterAntLabel);
 		acoPanel.add(acoChartPanel);
 		acoPanel.add(funChartPanel);
 //		acoPanel.add(uChartPanel);
 //		acoPanel.add(yChartPanel);
 //		acoPanel.add(betterAntScroll);
-		acoPanel.add(bestAntLabel);
+//		acoPanel.add(bestAntLabel);
 		acoPanel.add(bestAntScroll);
 		
 //		acoChartPanel.setVisible(false);
@@ -181,6 +185,43 @@ public class Frame extends JFrame {
 		funTF = new JTextField(Common.N_FUN_ID + "");
 		
 		beginBtn = new JButton("开始运行");
+		
+		Btn1 = new JButton("1");
+		Btn2 = new JButton("2");
+		Btn3 = new JButton("3");
+		
+		Btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(acoChartPanel.isVisible()){
+					acoChartPanel.setVisible(false);
+				}
+				else{
+					acoChartPanel.setVisible(true);
+				}
+			}
+		});
+		Btn2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(funChartPanel.isVisible()){
+					funChartPanel.setVisible(false);
+				}
+				else{
+					funChartPanel.setVisible(true);
+				}
+			}
+		});
+		Btn3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(bestAntScroll.isVisible()){
+					bestAntScroll.setVisible(false);
+				}
+				else{
+					bestAntScroll.setVisible(true);
+				}
+			}
+		});
+		
+		
 
 		antPanel.setLayout(new GridLayout(2, 1));
 		antPanel.add(antLabel);
@@ -200,12 +241,18 @@ public class Frame extends JFrame {
 		layout.setConstraints(funPanel, new GBC(0, 2, 1, 1).setFill(GBC.BOTH).setWeight(1, 0));
 		layout.setConstraints(itPanel, new GBC(0, 3, 1, 1).setFill(GBC.BOTH).setWeight(1, 0));
 		layout.setConstraints(beginBtn, new GBC(0, 4, 1, 1).setFill(GBC.BOTH).setWeight(1, 0));
+		layout.setConstraints(Btn1, new GBC(0, 5, 1, 1).setFill(GBC.BOTH).setWeight(1, 0));
+		layout.setConstraints(Btn2, new GBC(0, 6, 1, 1).setFill(GBC.BOTH).setWeight(1, 0));
+		layout.setConstraints(Btn3, new GBC(0, 7, 1, 1).setFill(GBC.BOTH).setWeight(1, 0));
 		beginPanel.setLayout(layout);
 		beginPanel.add(funIdLabel);
 		beginPanel.add(antPanel);
 		beginPanel.add(funPanel);
 		beginPanel.add(itPanel);
 		beginPanel.add(beginBtn);
+		beginPanel.add(Btn1);
+		beginPanel.add(Btn2);
+		beginPanel.add(Btn3);
 
 	}
 
